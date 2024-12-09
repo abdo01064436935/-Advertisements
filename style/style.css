@@ -1,0 +1,730 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.parent {
+    height: 200vh;
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas:
+        "l l l l"
+        "l l l l"
+        "l l l l"
+        "i i i i"
+        "i i i i"
+        "i i i i"
+        "o o o o"
+        "o o o o"
+        "g g g g"
+        "g g g g"
+        "h h h h"
+        "h h h h"
+        "h h h h"
+        "h h h h"
+        "t t t t"
+        "b b b b"
+        "b b b b"
+        "p p p p"
+        "p p p p"
+        "p p p p"
+        "p p p p"
+        "e e e e"
+        "v v v v"
+    ;
+}
+
+.child {
+
+    font-size: 2rem;
+
+}
+
+.iphone {
+    grid-area: i;
+
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+
+.iphone .container {
+    width: 100%;
+    display: flex;
+
+    position: absolute;
+
+
+}
+
+.iphone .caption {
+    width: 40%;
+
+
+    top: 0%;
+
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
+.iphone .caption h4 {
+    font-size: 17px;
+    color: #A7A2A6;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.iphone .caption h2 {
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.iphone .caption p {
+    font-size: 20px;
+    line-height: 25px;
+    color: #A7A2A6;
+}
+
+.iphone .image {
+    position: absolute;
+
+
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    left: 55%;
+    top: 12%;
+
+}
+
+.iphone .image img {
+    width: 90%;
+}
+
+.learnmore {
+    grid-area: l;
+    background-color: #F7F8F9;
+    position: relative;
+}
+
+.learnmore .bigdiv {
+
+    width: 100%;
+
+    position: absolute;
+
+}
+
+
+.learnmore .bigdiv .smalldiv {
+
+    width: 60%;
+    left: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+.learnmore .bigdiv .smalldiv h4 {
+    font-size: 20px;
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.learnmore .bigdiv .smalldiv h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+
+
+.learnmore .bigdiv .smalldiv a {
+    font-size: 17px;
+    color: #34BBC2;
+}
+
+
+.our {
+    grid-area: o;
+    background-color: #F05638;
+}
+
+.our .sum {
+
+    position: relative;
+}
+
+.our .sum .img {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 50px;
+    height: 100%;
+}
+
+.our .sum .img img {
+    width: 100%;
+}
+
+.our .sum .text {
+    position: absolute;
+    top: 250px;
+
+    width: 50%;
+    text-align: center;
+    left: 25%;
+
+
+}
+
+.our .sum .text h2 {
+    font-size: 22px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+}
+
+.our .sum .text a {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFC80A;
+}
+
+.hardly {
+    grid-area: h;
+    position: relative;
+
+
+}
+
+.hardly .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+.hardly .divleft {
+
+    width: 100%;
+
+}
+
+.hardly .divleft .caption {
+    width: 40%;
+
+
+    margin-top: 20%;
+    margin-left: 25%;
+    margin-bottom: 40px;
+}
+
+.hardly .divleft .caption h4 {
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hardly .divleft .caption h2 {
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.hardly .divleft .image {
+
+    width: 60%;
+
+    margin-left: 25%;
+    padding-top: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.hardly .divleft img {
+    width: 70%;
+}
+
+
+.hardly .divright {
+
+    position: absolute;
+
+    width: 40%;
+    left: 50%;
+    top: 20%;
+
+}
+
+.hardly .divright p {
+    font-size: 17px;
+    color: #9fa3a7;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.hardly .divright a {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #34BBC2;
+
+}
+
+.popular {
+    grid-area: p;
+
+    position: relative;
+}
+
+.popular .container {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    background-color: #8B72B6;
+}
+
+.popular .container .circle {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #8166B0;
+    padding-top: 40px;
+    border-radius: 50%;
+}
+
+.popular .container .circle .pop {
+    display: flex;
+    background-color: #8B72B6;
+    height: 30px;
+    text-align: center;
+    width: 35%;
+    margin-left: 33%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+
+}
+
+.popular .container .circle .pop .allam {
+
+
+    background-position: center;
+    background-size: cover;
+    padding-left: 10px;
+    border-radius: 20px;
+
+
+}
+
+.popular .container .circle .pop img {
+    width: 60%;
+    margin-bottom: 7px;
+}
+
+.popular .container .circle .pop h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+
+}
+
+.popular .container .circle .image {
+    width: 65%;
+    background-position: center;
+    background-size: cover;
+
+    margin: auto;
+}
+
+.popular .container .circle .image img {
+
+    width: 100%;
+}
+
+.popular .container .circle h4 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.popular .container h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.popular .container .par {
+    width: 70%;
+    margin: auto;
+
+}
+
+.popular .container p {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.popular .container a {
+    width: 45%;
+
+
+    margin: auto;
+}
+
+
+
+
+.popular .container a button {
+
+
+    padding: 14px 28px;
+    border-radius: 50px;
+    background-color: #ffc80a;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.games {
+    grid-area: g;
+    position: relative;
+    background-color: #F7F8F9;
+
+}
+
+.games .container {
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #F7F8F9;
+}
+
+.games .container .image {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    margin: auto;
+
+}
+
+.games .container .image img {
+    margin: auto;
+    width: 100%;
+}
+
+.games .container .title {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.games .container .title h3 {
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.games .container .title a {
+
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.best {
+    grid-area: b;
+    position: relative;
+    overflow: hidden;
+    background-color: #93B6B7;
+}
+
+
+
+.best .container .img img {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20%;
+    background-color: #93B6B7;
+
+}
+
+.best .container .img2 {
+    background-color: #F05638;
+    width: 100%;
+
+}
+
+.best .container .img2 img {
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    top: 42%;
+    right: 15%;
+    width: 90%;
+}
+
+.best .container .title {
+    position: absolute;
+    top: 19%;
+    left: 30%;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    color: white;
+
+}
+
+
+.best .container .be {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    background-color: #FA684F;
+    text-align: center;
+    width: 13%;
+    border-radius: 5px;
+    color: white;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+.twitter {
+    grid-area: t;
+    position: relative;
+
+}
+
+.twitter .container {
+    position: absolute;
+    width: 100%;
+    background-color: #38D5F4;
+    height: 100%;
+}
+
+.twitter .container .circle {
+    background-color: #35CFED;
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.twitter .container .image {
+    background-color: #35CFED;
+    width: 15%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.twitter .container .title h3 {
+    margin: auto;
+    width: 45%;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+
+}
+
+
+.twitter .container .image img {
+    width: 100%;
+}
+
+
+
+.experience {
+    grid-area: e;
+    position: relative;
+    background-color: #F7F8F9;
+}
+
+
+.experience .container {
+    position: absolute;
+    width: 100%;
+
+}
+
+.experience .container .popular {
+    position: absolute;
+    text-align: center;
+    width: 25%;
+    height: 20px;
+    background-color: #7bc424;
+    color: #fff;
+    top: 50px;
+    left: 150px;
+    border-radius: 5px;
+}
+
+.experience .container .popular h3 {
+    font-size: 10px;
+    padding-top: 5px;
+    letter-spacing: 2px;
+}
+
+.experience .container .title {
+    position: absolute;
+    background-color: #F7F8F9;
+    text-align: center;
+    width: 60%;
+    top: 80px;
+    left: 23%;
+}
+
+.experience .container .title h3 {
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.vision {
+    grid-area: v;
+    position: relative;
+    background-color: #2C2C2C;
+}
+
+.vision .container {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.vision .container .image {
+    width: 28%;
+
+
+    margin-left: 40px;
+}
+
+.vision .container .image img {
+    width: 100%;
+}
+
+.vision .container .title {
+    padding-top: 70px;
+    color: white;
+    margin-right: 70px;
+    width: 30%;
+}
+
+.vision .container .title h3 {
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 700px) {
+    .parent {
+        height: 200vh;
+        display: grid;
+        grid-auto-rows: minmax(200px, auto);
+
+        grid-template-areas:
+            "l l l l"
+            "l l l l"
+            "i i i i"
+            "i i i i"
+            "o o g g"
+            "o o g g"
+            "h h h h"
+            "h h h h"
+            "t t p p"
+            "b b p p"
+            "b b p p"
+            "e e e e"
+            "v v v v"
+        ;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .parent {
+        height: 200vh;
+        display: grid;
+        grid-auto-rows: minmax(200px, auto);
+
+        grid-template-areas:
+            "i i l l"
+            "i i l l"
+            "o h h p"
+            "o h h p"
+            "g b b p"
+            "g b b p"
+            "t e v v";
+    }
+}
